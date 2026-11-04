@@ -1,4 +1,4 @@
-import random
+import secrets
 
 chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456!@$%&*"
 
@@ -8,6 +8,6 @@ while 1:
     for x in range(0,password_count):
         password = ""
         for x in range(0,password_len):
-            password_char = random.choice(chars)
+            password_char = secrets.choice(chars)
             password      = password + password_char
         print("Here is your password :", password)
